@@ -269,19 +269,20 @@ a {
   font-family: "Berkshire Swash";
   font-size: calc(1.2rem + 3.8vw);
   font-weight: 400;
+  margin-top: -10px;
 }
 
 .primary-btn {
   background-color: #ed0a19;
   border-radius: 6rem;
   padding: 1.1rem 20px;
-  /* margin-right: 10px; */
+  margin-right: 10px;
   font-size: 1.1rem;
 }
 
 .secondary-btn {
   background-color: #d5d5d5;
-  border-radius: 40px;
+  border-radius: 6rem;
   padding: 1.1rem 20px;
   font-size: 1.1rem;
 }
@@ -300,3 +301,5 @@ a {
   margin: -6px;
   box-shadow: -1px 0px 4px #898989;
 }
+
+
