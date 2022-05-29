@@ -267,7 +267,7 @@ a {
 
 .quote {
   font-family: "Berkshire Swash";
-  font-size: 3.8rem;
+  font-size: calc(1.2rem + 3.8vw);
   font-weight: 400;
 }
 
