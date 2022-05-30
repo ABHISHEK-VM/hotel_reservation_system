@@ -11,6 +11,22 @@ body {
 
   font-family: "Poppins", sans-serif;
   /* background-image: linear-gradient(135deg, #ebe7e6, #dfd9db); */
+  /* background-image: url("img/bg.webp"); */
+  
+}
+
+.bg-image{
+  -webkit-filter: blur(10px); /* Safari 6.0 - 9.0 */
+      filter: blur(10px);
+      position: absolute;
+      right: 0px;
+      top: 40px;
+      z-index: -3;
+      object-fit: cover;
+      background-size: auto;
+      width: 90%;
+      height: 100%;
+      background-repeat: repeat-y ;
 }
 
 ul li {
@@ -313,5 +329,9 @@ a {
 }
 
 food-img{
-  position: absolute;
+  /* position: absolute; */
+  overflow: hidden;
+
 }
+
+
