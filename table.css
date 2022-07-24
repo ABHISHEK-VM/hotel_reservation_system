@@ -1,0 +1,40 @@
+.fst-section{
+    margin-top: 60px;
+  display: flex;
+  
+  justify-content: space-around;
+  /* padding: 40px 100px; */
+  align-items: center;
+}
+
+
+.row2-layout{
+    display: flex;
+    
+    justify-content: space-evenly;
+    /* padding: 40px 150px; */
+    align-items: center;
+  }
+
+.col.img-fluid.seats {
+ padding: 50px;
+ width: 15rem
+
+
+}
+
+.col.img-fluid.seat10 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+     width: 20rem;   
+     
+     padding: 40px;
+
+     background-color: rgb(255, 169, 169);
+   
+   
+   }
+
+
