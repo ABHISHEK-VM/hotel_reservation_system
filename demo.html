@@ -11,12 +11,18 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+ 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
 
     <link rel="stylesheet" href="style.css">
     <script src="table.js"></script>
 
 </head>
 <body>
+
 
 
     <div class="container">
@@ -42,7 +48,9 @@
         </div>
      </div>
      <script type="text/javascript">
-        $(function () {
+
+$(document).ready(function() {
+    $(function () {
             $('#datetimepicker6').datetimepicker();
             $('#datetimepicker7').datetimepicker({
         useCurrent: false //Important! See issue #1075
@@ -53,9 +61,16 @@
             $("#datetimepicker7").on("dp.change", function (e) {
                 $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
             });
-        });
+        });x
+          
+         });
+
+
+
+      
      </script>
-   
+
+ 
 
 
 </body>
