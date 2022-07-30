@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="login.js">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <!-- <h2>Login Page</h2> -->
+
+
+
+
+
+
+
+
+
+
+    <div class="container" style="display: flex; justify-content: center; align-items: center;">
+
+        
+        <form class="col form" >
+            <div class="form__field" >
+    
+                <center><h3 >Login Page</h3></center>
+                <!-- <p>Quantity:1</p>
+                <p>Rs 340 /-</p> -->
+    
+    
+            </div>
+            <!-- <button class="button" type="button" onclick="document.getElementById('id01').style.display='block'">Login as Admin</button>
+            <button class="button" type="button" onclick="document.getElementById('id01').style.display='block'">Login as Chef</button>
+            <button class="button" type="button" onclick="document.getElementById('id01').style.display='block'">Login as Cashier</button> -->
+            <button class="button" type="button" onclick="document.getElementById('id01').style.display='block'">Login as Admin</button>
+            <button class="button" type="button" onclick="document.getElementById('id01').style.display='block'">Login as Chef</button>
+            <button class="button" type="button" onclick="document.getElementById('id01').style.display='block'">Login as Cashier</button>
+        
+        
+        
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+    
+
+
+    <div id="id01" class="modal">
+
+        <form class="modal-content animate form-modal"  action="admin.html" onsubmit=" authenticate()
+        ">
+        
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+            </div>
+
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input style="border: none; border-radius: 30px;" type="text" placeholder="Enter Username" id="username" name="uname" >
+                
+                <label for="psw"><b>Password</b></label>
+                <input style="border: none; border-radius: 30px;" type="password" placeholder="Enter Password" id= "password" name="psw" >
+                
+                <p id="error-msg" style="color:rgb(230, 9, 9); font-size: small;">
+                    
+                </p>
+
+                <button style="margin-top: 30px;" class="button" type="submit" onclick="validate()">Login</button>
+         
+
+            </div>
+            
+
+        </form>
+    </div>
+
+    
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            document.getElementById('error-msg').innerHTML
+                = '';
+            
+
+            if (event.target == modal) {
+                
+                modal.style.display = "none";
+                
+            }
+        }
+
+        var loggedInP = false;
+        var loggedInU = false;
+
+
+     
+            
+
+
+        
+
+function authenticate() {
+  var password = document.getElementById('password').value;
+  var username = document.getElementById('username').value;
+
+  if (password == "" || username == "") {
+    
+    document.getElementById('error-msg').innerHTML
+                = 'Username and Password cannot be empty...';
+                return false;
+               
+  } else {
+
+    loggedInP = loginP(password);
+    loggedInU = loginU(username);
+  status();
+  
+  }
+
+
+  
+}
+
+function loginP(password) {
+    var storedPassword = '12345';
+
+    return password == storedPassword;
+}
+
+function loginU(username) {
+    var storedUsername = 'admin@123';
+
+    return username == storedUsername;
+}
+
+function status() {
+  if(loggedInP && loggedInU) {
+    return true;
+    
+  } else {
+    return false;
+    console.log('You are not in ');
+  }
+}
+
+
+    </script>
+
+</body>
+
+</html>
